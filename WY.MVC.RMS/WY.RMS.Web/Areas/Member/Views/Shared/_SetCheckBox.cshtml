@@ -1,0 +1,32 @@
+﻿@using WY.RMS.ViewModel
+@model List<CheckBoxVM>
+@{
+    int currentKeyId = ViewBag.KeyId;
+}
+<link href="~/Scripts/AdminLTE2.3.0/plugins/iCheck/square/blue.css" rel="stylesheet" />
+
+<div>
+    <input type="hidden" id="keyId" name="keyId" value="@currentKeyId" />
+    <div class="form-group">
+        @foreach (var item in Model)
+        {
+            @*<div class="checkbox icheck col-sm-4">
+                @Html.CheckBoxFor(c=>item.Name, new { @class = "myCheck" }) @*增加myCheck样式为了避免表格中的checkbox失效*@
+            @*</div>*@
+    <div class="checkbox icheck col-sm-4 col-xs-6">
+        <label>
+            <input class="myCheck" checked="@item.IsChecked" type="checkbox" name="@item.Name" value="@item.Value">@item.Discription
+        </label>
+    </div>
+        }
+    </div>
+</div>
+<script>
+    $(function () {
+        $('input.myCheck').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>

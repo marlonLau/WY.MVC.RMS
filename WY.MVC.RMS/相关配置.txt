@@ -1,0 +1,12 @@
+﻿MVC4通用权限管理系统基础框架源码
+
+源码描述：
+一、源码特点
+       1、项目是一个通用权限管理系统基础框架，采用Asp.net MVC4+EF5 CodeFirst+Bootstrap3+C#+SqlServer2008R2进行开发，服务端采用Ioc容器Autofac对各层解耦，采用T4模板来创建实体类数据表关系配置类及仓储Repository类，并用Entityframework.extended插件对EF进行扩展，使其更好支持批量操作。
+       2、客户端采用响应式布局，适配PC端及移动终端。使用基于Bootstrap3开发的前端模板AdminLTE，表格控件使用的是bootstrap-table，WYRMS系统前后端基础框架和模块已经搭建完成
+二、注意事项
+       1、开发环境为Visual Studio 2013，数据库为SqlServer2014，使用.net 4.0开发。
+       2、数据库文件在DB_51aspx文件夹中，附加即可
+       3、默认数据库连接字符串在web.config配置文件中修改
+       4、登录账户：admin，密码：123456 
+
