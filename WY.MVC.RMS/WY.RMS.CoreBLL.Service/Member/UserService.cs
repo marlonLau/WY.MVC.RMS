@@ -1,10 +1,4 @@
-﻿/************************************
- * 描述：尚未添加描述
- * 作者：吴毅
- * 日期：2016/2/4 17:04:40  
-*************************************/
-
-using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
